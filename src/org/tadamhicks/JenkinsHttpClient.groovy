@@ -3,11 +3,12 @@ package org.tadamhicks
 
 import groovy.json.JsonBuilder
 @Grab("org.jodd:jodd-http:3.8.5")
+import jodd.http.HttpRequest
 
 /**
  * Helper class for making REST calls from a Jenkins Pipeline job.
  */
-class JenkinsHttpClient {
+class JenkinsHttpClient1 {
 
     private HttpRequest httpRequest
     
