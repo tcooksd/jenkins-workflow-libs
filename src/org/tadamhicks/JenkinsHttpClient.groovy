@@ -8,7 +8,7 @@ import jodd.http.HttpRequest
 /**
  * Helper class for making REST calls from a Jenkins Pipeline job.
  */
-class JenkinsHttpClient1 {
+class JenkinsHttpClient {
 
     private HttpRequest httpRequest
     
