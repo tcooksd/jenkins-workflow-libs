@@ -36,6 +36,7 @@ class JenkinsHttpClient {
      */
     def postJson(String url, Map<?, ?> body, String bearerToken) {
 	String jsonbody = new JsonBuilder(body).toString()
+        String token = 'BEARER' + bearerToken
         def resp = httpRequest.post(url)
                 .header('Authorization', bearerToken)
                 .contentType('application/json')
